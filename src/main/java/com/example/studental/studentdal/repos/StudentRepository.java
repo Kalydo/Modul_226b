@@ -1,4 +1,8 @@
 package com.example.studental.studentdal.repos;
 
-public interface StudentRepository {
+import com.example.studental.studentdal.entity.Student;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+public interface StudentRepository extends JpaRepository<Student, Long> {
 }
